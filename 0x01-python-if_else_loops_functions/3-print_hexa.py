@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for letter in range(97, 123):
-    if chr(letter) is not 'q' and chr(letter) is not 'e':
-    print("{}".format(chr(letter)), end="")
+for figure in range(ord('a'), ord('z') + 1):
+    if chr(figure) != 'q' and chr(figure) != 'e':
+        print('{}'.format(chr(figure)), end='')
