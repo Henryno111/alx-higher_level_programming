@@ -4,25 +4,30 @@
 def safe_print_list(my_list=[], num=0):
 
     """Print num elememts of a list.
-        Args:
-        my_list (list): The list to print elements from.
+    Args:
 
-        num (int): The number of elements of my_list to print.
+    my_list (list): The list to print elements from.
 
-    Returns:
-        The number of elements printed.
+    num (int): The number of elements of my_list to print.
+
+
+    Returns:
+
+    The number of elements printed.
+
     """
 
-        count = 0
+    count = 0
 
-        for index in range(num):
+    for index in range(num):
 
         try:
 
-        print("{}".format(my_list[index]), end="")
-        count += 1
+            print("{}".format(my_list[index]), end="")
 
-        except IndexError:
+    count += 1
+
+    except IndexError:
 
         break
 
