@@ -1,36 +1,13 @@
-#!/usr/bin/python3
+#!usr/bin/python3
 
 
-def safe_print_list(my_list=[], num=0):
-
-    """Print num elememts of a list.
-    Args:
-
-    my_list (list): The list to print elements from.
-
-    num (int): The number of elements of my_list to print.
-
-
-    Returns:
-
-    The number of elements printed.
-
-    """
-
+def safe_print_list(my_list=[], x=0):
     count = 0
-
-    for index in range(num):
-
+    for i in range(x):
         try:
-
-            print("{}".format(my_list[index]), end="")
-
-    count += 1
-
-    except IndexError:
-
-        break
-
+            print("{}".format(my_list[i]), end="")
+            count += 1
+        except IndexError:
+            break
     print("")
-
     return (count)
