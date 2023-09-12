@@ -12,7 +12,7 @@ function printSquare (size) {
       for (let j = 0; j < size; j++) {
         row += 'X';
       }
-      square += row + '\n';
+      square += row + '\n' + '\n';
     }
     console.log(square);
   }
