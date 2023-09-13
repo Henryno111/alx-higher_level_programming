@@ -1,21 +1,19 @@
 #!/usr/bin/node
 
-const squareSize = parseInt(process.argv[2]);
+const process = require('process');
+const firstArg = process.argv[2];
+const size = parseInt(firstArg);
 
-function printSquare (size) {
-  if (isNaN(size)) {
-    console.log('Missing size');
-  } else {
-    let square = '';
+if (!isNaN(size)) {
+  if (size > 0) {
     for (let i = 0; i < size; i++) {
       let row = '';
       for (let j = 0; j < size; j++) {
         row += 'X';
       }
-      square += row + '\n';
+      console.log(row);
     }
-    console.log(square);
   }
+} else {
+  console.log('Missing size');
 }
-
-printSquare(squareSize);
