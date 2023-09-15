@@ -5,5 +5,3 @@ SQL
 MySQL
 ORM
 SQLAlchemy
-
-

@@ -15,7 +15,7 @@ if __name__ == "__main__":
 
     for row in my_data:
         print(row)
-
+ 
     my_cursor.close()
 
     my_db.close()
