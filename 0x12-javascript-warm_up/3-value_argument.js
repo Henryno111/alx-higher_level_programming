@@ -2,8 +2,8 @@
 
 const firstArg = process.argv[2];
 
-if (process.argv[2]) {
-  console.log(firstArg);
-} else {
+if (firstArg === undefined) {
   console.log('No arguement');
+} else {
+  console.log(firstArg);
 }
