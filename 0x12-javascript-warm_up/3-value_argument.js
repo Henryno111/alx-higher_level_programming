@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const firstArg = process.argv[2];
+const firstArguement = process.argv[2];
 
 if (process.argv[2]) {
 	console.log(firstArg);
